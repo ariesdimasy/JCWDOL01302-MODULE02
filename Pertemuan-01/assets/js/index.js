@@ -1,0 +1,3 @@
+function hello() {
+  const setName = () => {};
+}

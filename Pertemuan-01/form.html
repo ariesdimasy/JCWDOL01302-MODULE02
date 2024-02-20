@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+    <link rel="stylesheet" type="text/css" href="./assets/style/style.css" />
+    <style>
+        #name {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Service </h1>
+    <hr>
+    <a href="./index.html"> Home </a> |
+    <a href="./service.html"> Service </a> |
+    <a href="./form.html"> Form </a>
+    <hr>
+
+    <h3> Registration </h3>
+
+    <form action="./form.html" method="post">
+        <fieldset>
+            <legend> Registration </legend>
+            <div>
+                <label> Name </label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div>
+                <label> Email </label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div>
+                <label> Password </label>
+                <input type="password" name="password" id="password" />
+            </div>
+            <div>
+                <label> Birth Date </label>
+                <input type="date" name="birthdate" id="birthdate" />
+            </div>
+            <div>
+                <label> Sign In </label>
+                <input type="datetime-local" name="signin" id="signin" />
+            </div>
+            <div>
+                <label>Hobby </label>
+                <select name="hobby" id="hobby">
+                    <option> Rocket League </option>
+                    <option> Watching Anime </option>
+                </select>
+            </div>
+            <hr>
+            <button type="submit" onclick="alert('thanks for registration')"> Submit </button>
+            <button type="button" onclick="alert('hello world')"> Hello </button>
+        </fieldset>
+    </form>
+    <div id="name" style="border:1px solid black; width: 200px; height: 200px;">
+
+    </div>
+    <div class="box" style="background-image: url('./assets/images/image.jpg');"></div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+    body { 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }  
+        
+    p { 
+        line-height: 10px;
+    }
+
+
+    h3 {
+        color: aqua;
+        text-transform: uppercase;
+    }
+  
+    .box {
+        border: 5px double black;
+        background-color: linear-gradient( cornflowerblue, blue);
+        background: linear-gradient(90deg,blue,cornflowerblue);
+
+        width: 200px;
+        height: 200px;
+    }
+
+    a:visited { 
+        color: chocolate;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: darkblue;
+        font-weight: bold;
+    }
+
+    .subbox { 
+        border: 5px dotted red;
+        width: 150px;
+        height: 150px;
+    }
+
+    .my-shadow { 
+        box-shadow: -10px 10px 1rem gray;
+    }
+
+    .my-border { 
+        border-radius: 50%;
+    }
+
+    form { 
+        width: 50%;
+    }

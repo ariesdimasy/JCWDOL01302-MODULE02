@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+        }
+
+        div.static {
+            position: static;
+            border: 3px solid blue;
+        }
+
+        div.static .box {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        div.relative {
+
+            left: 30px;
+            border: 3px dotted chocolate;
+            width: 100px;
+            height: 100px;
+        }
+
+        .mybox {
+            position: relative;
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+
+        div.absolute {
+            position: absolute;
+            left: 100;
+            background-color: blueviolet;
+
+            width: 280;
+            height: 108;
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Position : Static </h2>
+    <p>Here is static example </p>
+    <div class="static">
+        this element is static
+        <div class="box">
+            BOX 1
+        </div>
+    </div>
+    <span class="static">
+
+        this is paragraf
+    </span>
+    <div class="mybox">
+        BOX
+    </div>
+    <div class="absolute">
+        absolute
+    </div>
+    <div class="relative">
+
+    </div>
+
+
+</body>
+
+</html>

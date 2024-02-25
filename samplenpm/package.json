@@ -1,0 +1,14 @@
+{
+  "name": "samplenpm",
+  "version": "1.0.0",
+  "description": "belajar menggunakan npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aries dimas",
+  "license": "ISC",
+  "dependencies": {
+    "json-stable-stringify": "^1.1.1"
+  }
+}

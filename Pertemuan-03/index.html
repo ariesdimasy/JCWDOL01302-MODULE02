@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + Javascript Dom</title>
+
+</head>
+
+<body>
+    <h1 id="myElement" class="">Original Text </h1>
+    <div id="parent1" style="border:1px solid black; width: 50px; height: 50px;">
+
+    </div>
+    <div class="a"> A</div>
+    <div class="a">another A <span style="color:blue"> Hello </span></div>
+    <button onclick="updateText()">Update Text</button>
+    <button onClick="getA()">get A</button>
+    <button onClick="addChildren()">append</button>
+    <button id="myButton">AddEventListener</button>
+    <script>
+        function updateText() {
+            let el = document.getElementById("myElement")
+            el.innerText = "Updated Text"
+        }
+
+        function getA() {
+            let a = document.getElementsByClassName("a")
+            let el = document.getElementById("myElement")
+
+
+            el.innerHTML = a[1].innerHTML
+        }
+
+        function addChildren() {
+            let a = document.getElementsByClassName("a")
+            let parent1 = document.getElementById("parent1")
+            alert(a[1].innerHTML)
+            parent1.appendChild(a[1])
+        }
+
+        let myElement = document.getElementById("myElement")
+
+        myElement.setAttribute("align", "right")
+        myElement.style.color = "blue"
+        myElement.style.fontSize = "50px"
+
+        const myButton = document.getElementById("myButton")
+        myButton.addEventListener("click", function () {
+            alert("Button Clicked")
+        })
+
+    </script>
+</body>
+
+</html>

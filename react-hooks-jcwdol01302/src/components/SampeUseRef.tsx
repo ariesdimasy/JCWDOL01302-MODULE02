@@ -27,6 +27,14 @@ export default function SampleUseRef() {
     console.log("render");
   }, [name]);
 
+  const hanldeClickButton = () => {
+
+  }
+
+  const loadDataUser = () => [
+    
+  ]
+
   return (
     <div className="App">
       <input type="text" ref={inputRef} />

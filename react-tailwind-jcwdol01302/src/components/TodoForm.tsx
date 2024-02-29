@@ -4,37 +4,38 @@ import { Button, Input } from "@chakra-ui/react";
 import ITodo from "../interfaces/ITodo";
 
 interface ITodoForm {
-  done: number;
-  setTodos: Function;
+  setTodos: () => void;
   todos: ITodo[];
 }
 
 export default function TodoForm(props: ITodoForm) {
-  const { done, setTodos, todos } = props;
+  const { setTodos, todos } = props;
   const [todoTitle, setTodoTitle] = useState<string>("");
 
   const handleAddTodo = () => {
     const newTodo: ITodo = {
-      id: 10,
+      id: todos[todos.length - 1].id + 1,
       title: todoTitle,
       done: false,
     };
 
-    alert(JSON.stringify(todos));
     setTodos([...todos, newTodo]);
     setTodoTitle("");
   };
 
   return (
     <div className="mx-auto w-3/6 my-14">
-      <h1 className="text-2xl text-center text-white"> Done : {done}</h1>
+      <h1 className="text-2xl text-center text-white">
+        {" "}
+        Done : {todos.filter((item) => item.done === true).length}
+      </h1>
       <Input
         value={todoTitle}
         onChange={(e) => setTodoTitle(e.target.value)}
         placeholder="Add Todo"
         className="my-5"
       />
-      {todoTitle}
+
       <Button colorScheme="green" onClick={() => handleAddTodo()}>
         {" "}
         Add Todo{" "}

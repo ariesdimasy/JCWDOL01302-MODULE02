@@ -1,0 +1,40 @@
+.navbar { 
+    height: 80px;
+    width: 100%;
+    background-color: cornflowerblue;
+   
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.navbar .left { 
+    
+    width: 30%;
+    height: 80px;
+    line-height: 70px;
+}
+
+.navbar .logo { 
+    font-size: 30px;
+}
+
+.navbar .right { 
+    width: 70%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li { 
+    padding: 0 30px;
+}
+
+.menu li:hover { 
+    background-color: brown;
+}

@@ -3,12 +3,13 @@ import "./App.css";
 // import SampleUseMemo from "./components/SampleUseMemo";
 //import SampleContext from "./components/SampleContext";
 //import SampeUseReducer from "./components/SampleUseReducer";
-import SampleUseCallback from "./components/SampleUseCallback";
+// import SampleUseCallback from "./components/SampleUseCallback";
+import CounterNew from "./components/CounterNew";
 
 function App() {
   return (
     <>
-      <SampleUseCallback></SampleUseCallback>
+      <CounterNew></CounterNew>
     </>
   );
 }

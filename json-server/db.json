@@ -1,0 +1,73 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "batman",
+      "color": "black",
+      "superpower": "rich"
+    },
+    {
+      "id": 2,
+      "name": "superman",
+      "color": "blue",
+      "superpower": "superhuman strength and fly"
+    },
+    {
+      "id": 3,
+      "name": "Plasticman",
+      "color": "red",
+      "superpower": "broken superhuman"
+    },
+    {
+      "id": 4,
+      "name": "Daredevil",
+      "color": "red",
+      "superpower": "supersonic hearing"
+    },
+    {
+      "id": "5153",
+      "name": "Rohan ",
+      "color": "white",
+      "superpower": "Heavens Door"
+    },
+    {
+      "id": "2ea0",
+      "name": "Jotaro Kujo",
+      "color": "black",
+      "superpower": "star platinum"
+    },
+    {
+      "id": "b0ac",
+      "name": "Koichi",
+      "color": "green",
+      "superpower": "Echoes Act 3 "
+    },
+    {
+      "id": "5d43",
+      "name": "test",
+      "color": "white",
+      "superpower": "hello"
+    },
+    {
+      "id": "1eab",
+      "name": "dimas",
+      "color": "green",
+      "superpower": "dfgfdg",
+      "email": "dimas@gmail.com"
+    },
+    {
+      "id": "3f81",
+      "name": "Rohan ",
+      "color": "green",
+      "superpower": "dfgfdg",
+      "email": "dimas@gmail.com"
+    },
+    {
+      "id": "21ef",
+      "name": "Rohan ",
+      "color": "green",
+      "superpower": "dfgfdg",
+      "email": "dimas@gmail.com"
+    }
+  ]
+}
